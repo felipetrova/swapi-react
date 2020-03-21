@@ -335,13 +335,13 @@ const LibsStyle = createGlobalStyle`
   .mb-6px{
     margin-bottom: 0.375rem;
   }
-
-  .mb-8px{
-    margin-bottom: 0.5rem;
-  }
-
+  
   .mb-7px{
     margin-bottom: 0.4375rem;
+  }
+  
+  .mb-8px{
+    margin-bottom: 0.5rem;
   }
 
   .mb-10px{
