@@ -1,6 +1,6 @@
 import * as Style from "./HeaderStyle";
 import * as GridStyle from "~/styles/Grid";
-import { ArrowLeft } from "~/styles/Icons";
+/* import { Icon } from "~/styles/Icons"; */
 
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function header({ title, slugPage, directory, logo }) {
           tablet={3}
         >
           <Link href={`${directory}`} as={`${slugPage}`}>
-            <ArrowLeft className="tx-blue fn-wb" />
+            <i className="fas fa-arrow-left" />
           </Link>
         </GridStyle.Col>
         <GridStyle.Col

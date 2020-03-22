@@ -13,13 +13,12 @@ const Index = () => {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
-  const loadSubs = useCallback(async () => {
+  const loadPersons = useCallback(async () => {
     try {
       setLoading(true);
       setErrorMsg("");
       const response = await API.get("people");
-
-      console.log(response.data);
+      
       // paginacao: https://swapi.co/api/people/?page=2
 
       setPeoples(response.data.results);
@@ -35,7 +34,7 @@ const Index = () => {
   });
 
   useEffect(() => {
-    loadSubs();
+    loadPersons();
   }, []);
 
   return (

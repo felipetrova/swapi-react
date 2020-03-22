@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import * as GridStyle from "~/styles/Grid";
 import * as Style from './CardPersonStyle';
 
+import StarshipComponent from "~/components/Starship/Starship";
+
 const CardPersson = (props) => {
 
   const {
@@ -101,14 +103,14 @@ const CardPersson = (props) => {
         <GridStyle.Row>
           <GridStyle.Col general={12}>
           {starships.length > 0 &&
-            <ul>
-              {starships.map((item, index) => (
-                <li key={index + 1}>
-                  {item}
-                </li>
-              ))}
-            </ul>
+            starships.map((item, index) => (
+              <StarshipComponent
+                key={index + 1}
+                info={item}
+              />
+            ))
           }
+          
           {!starships.length > 0 &&
             <p>
               <strong>

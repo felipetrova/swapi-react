@@ -2,14 +2,21 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
     @font-face {
-        font-family: 'labiicons';
-        src:  url('/fonts/labiicons.ttf');
-        src:  url('/fonts/labiicons.eot?#iefix') format('embedded-opentype'),
-            url('/fonts/labiicons.ttf') format('truetype'),
-            url('/fonts/labiicons.woff') format('woff'),
-            url('/fonts/labiicons.svg?#labiicons') format('svg');
-        font-weight: normal;
+        font-family: 'Font Awesome 5 Free';
         font-style: normal;
-        font-display: block;
+        font-weight: 400;
+        font-display: auto;
+        // font-display: block;
+        src: url("/fonts/fa-regular-400.eot");
+        src: url("/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+            url("/fonts/fa-regular-400.woff2") format("woff2"),
+            url("/fonts/fa-regular-400.woff") format("woff"),
+            url("/fonts/fa-regular-400.ttf") format("truetype"),
+            url("/fonts/fa-regular-400.svg#fontawesome") format("svg");
+    }
+
+    .far {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
     }
 `;
