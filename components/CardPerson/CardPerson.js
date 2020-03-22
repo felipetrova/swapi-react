@@ -25,8 +25,8 @@ const CardPersson = (props) => {
   return (
     <>
       <Style.CardPerson className="mb-10px">
-        <GridStyle.Row /* className="no-gutters w-100" */>
-          <GridStyle.Col /* className="no-margin" */ general={12} mobile={12} tablet={12}>
+        <GridStyle.Row>
+          <GridStyle.Col general={12} mobile={12} tablet={12}>
             <p>
               <strong>
                 Name: {" "}
@@ -120,7 +120,6 @@ const CardPersson = (props) => {
           }
           </GridStyle.Col>
         </GridStyle.Row>
-
       </Style.CardPerson>
     </>
   );

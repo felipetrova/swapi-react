@@ -55,35 +55,39 @@ const Index = () => {
         
         {peoples.length > 0 && (
           <GridStyle.Container>
-            {peoples.map(
-              (
-                {
-                  name,
-                  height,
-                  mass,
-                  hair_color,
-                  skin_color,
-                  eye_color,
-                  birth_year,
-                  gender,
-                  starships
-                },
-                index
-              ) => (
-                  <CardPersonComponent
-                    key={index + 1}
-                    name={name}
-                    height={height}
-                    mass={mass}
-                    hair_color={hair_color}
-                    skin_color={skin_color}
-                    eye_color={eye_color}
-                    birth_year={birth_year}
-                    gender={gender}
-                    starships={starships}
-                  />
-                )
-            )}
+            <GridStyle.Row>
+              {peoples.map(
+                (
+                  {
+                    name,
+                    height,
+                    mass,
+                    hair_color,
+                    skin_color,
+                    eye_color,
+                    birth_year,
+                    gender,
+                    starships
+                  },
+                  index
+                ) => (
+                  <GridStyle.Col mobile={12} tablet={6} general={4}>
+                    <CardPersonComponent
+                      key={index + 1}
+                      name={name}
+                      height={height}
+                      mass={mass}
+                      hair_color={hair_color}
+                      skin_color={skin_color}
+                      eye_color={eye_color}
+                      birth_year={birth_year}
+                      gender={gender}
+                      starships={starships}
+                    />
+                  </GridStyle.Col>
+                  )
+              )}
+            </GridStyle.Row>
           </GridStyle.Container>
         )}
       </div>

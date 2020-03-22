@@ -5,7 +5,7 @@ export const GUTTER_WIDTH = 30;
 
 // Colors
 export const BLUE = '#007DC5';
-export const YELLOW = '#F9CE4A';
+export const YELLOW = '#ffe300';
 export const PINK = '#F05B89';
 export const LIGHT_GREY = '#CCCCCC';
 export const DARK_GREY = '#444444';

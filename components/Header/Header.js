@@ -1,10 +1,7 @@
 import * as Style from "./HeaderStyle";
 import * as GridStyle from "~/styles/Grid";
-/* import { Icon } from "~/styles/Icons"; */
 
-import Link from "next/link";
-
-export default function header({ title, slugPage, directory, logo }) {
+export default function header({ title, logo }) {
   return (
     <Style.Header className="bg-yellow">
       <GridStyle.Row className="no-gutters">
@@ -12,15 +9,14 @@ export default function header({ title, slugPage, directory, logo }) {
           className="flex align-itcenter no-margin no-padding"
           mobile={1}
           tablet={3}
+          general={4}
         >
-          <Link href={`${directory}`} as={`${slugPage}`}>
-            <i className="fas fa-arrow-left" />
-          </Link>
         </GridStyle.Col>
         <GridStyle.Col
           className="flex align-itcenter cont-center no-margin"
           mobile={10}
           tablet={3}
+          general={4}
         >
           <p className="fn-s18px fn-wb tx-blue">{title}</p>
           {logo && <img src={logo} alt="SWAPI" />}
@@ -29,6 +25,7 @@ export default function header({ title, slugPage, directory, logo }) {
           className="flex align-itcenter no-margin"
           mobile={1}
           tablet={3}
+          general={4}
         ></GridStyle.Col>
       </GridStyle.Row>
     </Style.Header>

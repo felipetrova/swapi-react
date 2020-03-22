@@ -8,4 +8,6 @@ export const CardPerson = styled.div`
   color: ${C.DARK_GREY};
   display: block;
   padding: 1.25rem;
+  height: 400px;
+  overflow: scroll;
 `;
